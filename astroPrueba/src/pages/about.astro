@@ -1,4 +1,6 @@
 ---
+import Descripccion from "./components/Descripccion.astro";
+
 const skills = [
     "HTML",
     "CSS",
@@ -17,10 +19,8 @@ const skills = [
 		<title>Astro</title>
 	</head>
 	<body>
-        
-        <p>Bienvenido a la página de About de Astro.</p>
-        <p>Esta es una página de ejemplo para mostrar cómo funciona Astro.</p>
-        <h2>Mis Habilidades</h2>
+        <navegation />
+        <Descripccion />
         <ul>
             {skills.map(skill => (
                 <li>{skill}</li>
