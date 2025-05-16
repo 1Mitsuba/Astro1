@@ -26,5 +26,12 @@ const skills = [
         </nav>
         <p>Bienvenido a la página de About de Astro.</p>
         <p>Esta es una página de ejemplo para mostrar cómo funciona Astro.</p>
+        <h2>Mis Habilidades</h2>
+        <ul>
+            {skills.map(skill => (
+                <li>{skill}</li>
+            ))}
+        </ul>
+        <h2>Sobre mí</h2>
 	</body>
 </html>
