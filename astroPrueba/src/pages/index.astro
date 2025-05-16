@@ -1,4 +1,6 @@
 ---
+import Navegation from "./components/navegation.astro";
+
 const pageTitle = "Mi primera página con Astro";
 ---
 
@@ -11,13 +13,7 @@ const pageTitle = "Mi primera página con Astro";
 		<title>Astro</title>
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/blog">Blog</a></li>
-			</ul>
-		</nav>
+		<Navegation />
 		<h1>Principal</h1>
 		<p>Bienvenido a la página principal de Astro.</p>
 	</body>
@@ -41,7 +37,7 @@ const pageTitle = "Mi primera página con Astro";
 		line-height: 1.5;
 	}
 	nav {
-		background-color: #0004ff;
+		background-color: #0f9efd;
 		color: white;
 		padding: 10px;
 		border-radius: 15px;
