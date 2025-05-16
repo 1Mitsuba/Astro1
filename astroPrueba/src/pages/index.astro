@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = "Mi primera página con Astro";
 ---
 
 <html lang="en">
@@ -11,6 +11,54 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/blog">Blog</a></li>
+			</ul>
+		</nav>
+		<h1>Principal</h1>
+		<p>Bienvenido a la página principal de Astro.</p>
 	</body>
 </html>
+
+<style>
+	nav {
+		background-color: #333;
+		color: white;
+		padding: 10px;
+	}
+
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav li {
+		display: inline;
+		margin-right: 20px;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	nav a {
+		color: white;
+		text-decoration: none;
+	}
+	nav a:hover {
+		text-decoration: underline;
+	}
+	nav a.active {
+		font-weight: bold;
+	}
+	nav a.active:hover {
+		text-decoration: none;
+	}			
+</style>
